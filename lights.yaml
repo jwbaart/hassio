@@ -1,0 +1,12 @@
+- platform: group
+  name: basement
+  entities:
+    - light.kelder_1
+    - light.kelder_2
+
+- platform: yeelight
+  devices:
+    192.168.4.8:
+        name: Kelder 1
+    192.168.4.9:
+        name: Kelder 2

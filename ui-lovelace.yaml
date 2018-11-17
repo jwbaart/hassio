@@ -1,0 +1,33 @@
+title: Home
+views:
+  - id: 0  # Automatically created id
+    title: Home
+    cards:
+      - id: 41d7c6ce9eef4b0dbb702ab6816a32ce  # Automatically created id
+        type: entities
+        title: all lights
+        show_header_toggle: true
+        entities:
+          - light.buitenverlichting_voor
+          - light.hue_ambiance_lamp_1
+          - light.hue_ambiance_lamp_2
+          - light.hue_ambiance_lamp_3
+          - light.hue_white_lamp_1
+          - light.hue_white_lamp_2
+          - light.hue_white_lamp_3
+          - light.living_room
+          - light.slaapkamer
+      - id: d25a2d0fd86d44d7977ba7e18bf837d6  # Automatically created id
+        type: media-control
+        entity: media_player.living_room
+      - type: entity-filter
+        entities:
+            - device_tracker.pixel_2
+            - device_tracker.rebec_tel_htc
+        state_filter:
+            - home
+        card: 
+            type: glance
+            title: Wie is er thuis?
+      - type: weather-forecast
+        entity: weather.br_unknown_station
