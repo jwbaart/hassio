@@ -63,6 +63,9 @@ sensor:
     host: !secret hassio
   #- platform: opensky
   #  radius: 10
+   - platform: travisci
+     api_key: !secret travisci_api
+     branch: develop
 
 weather:
   - platform: buienradar
