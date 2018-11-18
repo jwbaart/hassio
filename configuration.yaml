@@ -61,7 +61,7 @@ sun:
 sensor:
   - platform: yr
   - platform: pi_hole
-    host: !secret hassio
+    host: !secret pi_hole_host
   #- platform: opensky
   #  radius: 10
   - platform: travisci
