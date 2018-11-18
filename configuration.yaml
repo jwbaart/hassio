@@ -62,6 +62,7 @@ sensor:
   - platform: yr
   - platform: pi_hole
     host: !secret pi_hole_host
+    location: pihole
   #- platform: opensky
   #  radius: 10
   - platform: travisci
