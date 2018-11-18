@@ -1,0 +1,6 @@
+- alias: "Nightly Hass.io backup"
+  trigger:
+    platform: time
+    at: "03:06:00"
+  action:
+    - service: rest_command.backup_to_google_drive

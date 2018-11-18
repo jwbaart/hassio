@@ -1,0 +1,4 @@
+backup_to_google_drive:
+    url: !secret rest_backup_to_google_drive
+    method: GET
+    content_type:  'application/json; charset=utf-8'
